@@ -1,6 +1,6 @@
 # Deep Skilling Exercises
 
-This repository contains exercises across multiple domains covering **Data Structures & Algorithms**, **Design Patterns**, **PL/SQL**, and **Testing with JUnit, Mockito, and SLF4J**.
+This repository contains exercises across multiple domains covering **Data Structures & Algorithms**, **Design Patterns**, **PL/SQL**, **Testing with JUnit, Mockito, and SLF4J**, and **Spring Core and Maven**.
 
 ## Folder Structure
 
@@ -47,6 +47,10 @@ This repository contains exercises across multiple domains covering **Data Struc
 │   ├── SLF4J_Logging/                  # SLF4J logging integration
 │   └── Spring_Testing/                 # Spring Boot testing (MockMvc, services)
 │
+├── Spring Core and Maven/                  # Spring Core & Maven exercises (2 projects)
+│   ├── LibraryManagement/                 # Spring Library Management (AOP, XML config)
+│   └── Spring_Initializr/                 # Spring Boot Initializr demo (HelloController)
+│
 ├── .gitignore
 └── README.md
 ```
@@ -70,4 +74,11 @@ Each project is a standalone Maven project:
 ```bash
 cd "JUnit, Mockito and SL4J/ProjectName"
 mvn test
+```
+
+### Spring Core and Maven
+Each project is a standalone Maven project:
+```bash
+cd "Spring Core and Maven/ProjectName"
+mvn compile exec:java
 ```
