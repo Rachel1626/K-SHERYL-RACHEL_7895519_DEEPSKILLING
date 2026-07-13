@@ -1,10 +1,27 @@
-target/
+# Java compiled files
 *.class
+
+# Build output
+target/
+bin/
+
+# IDE files
+.vscode/
 .idea/
 *.iml
+.settings/
+.project
+.classpath
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Logs
+*.log
+
+# Java archives
 *.jar
 *.war
 *.ear
-.classpath
-.project
-.settings/
