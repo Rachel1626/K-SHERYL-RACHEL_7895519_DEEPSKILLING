@@ -1,11 +1,10 @@
-# WEEK 1 - Deep Skilling Exercises
+# Deep Skilling Exercises
 
-This repository contains exercises across three domains: **Data Structures & Algorithms**, **Design Patterns**, and **PL/SQL**.
+This repository contains exercises across multiple domains covering **Data Structures & Algorithms**, **Design Patterns**, **PL/SQL**, and **Testing with JUnit, Mockito, and SLF4J**.
 
 ## Folder Structure
 
 ```
-WEEK 1/
 ├── DATA STRUCTURES & ALGORITHMS/       # Java DSA exercises (7 exercises)
 │   ├── Exercise1_Inventory/            # Inventory Management (HashMap)
 │   ├── Exercise2_Search/               # Linear & Binary Search
@@ -39,6 +38,15 @@ WEEK 1/
 │   ├── Exercise6_Cursors.sql           # Monthly statements, annual fees
 │   └── Exercise7_Packages.sql          # Customer, Employee, Account packages
 │
+├── JUnit, Mockito and SL4J/            # Java Testing exercises (7 projects)
+│   ├── JUnit_Basic Testing Exercises/  # Basic JUnit assertions & annotations
+│   ├── JUnit Advanced Testing/         # Parameterized, timeout & ordered tests
+│   ├── Mockito/                        # Mockito mocking basics
+│   ├── Mockito_Advanced/               # Stubbing, spying & argument matchers
+│   ├── Mockito_Mock_Dependencies/      # Mocking repositories & controllers
+│   ├── SLF4J_Logging/                  # SLF4J logging integration
+│   └── Spring_Testing/                 # Spring Boot testing (MockMvc, services)
+│
 ├── .gitignore
 └── README.md
 ```
@@ -56,3 +64,10 @@ Run the scripts in order in any Oracle SQL environment:
 1. `schema.sql` - Create tables
 2. `sample_data.sql` - Insert sample data
 3. Any exercise file as needed
+
+### JUnit, Mockito & SLF4J
+Each project is a standalone Maven project:
+```bash
+cd "JUnit, Mockito and SL4J/ProjectName"
+mvn test
+```
