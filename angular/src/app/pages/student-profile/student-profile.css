@@ -1,0 +1,56 @@
+.profile-container {
+  padding: 2rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.profile-card {
+  background: #f5f5f5;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border: 1px solid #e0e0e0;
+}
+
+.profile-info p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}
+
+.no-enrollments {
+  color: #999;
+  padding: 1rem;
+}
+
+.no-enrollments a {
+  color: #1976d2;
+}
+
+.enrolled-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.enrolled-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background: white;
+  border-radius: 6px;
+  border: 1px solid #e0e0e0;
+  align-items: center;
+}
+
+.course-name {
+  font-weight: bold;
+  color: #333;
+}
+
+.course-code {
+  color: #1976d2;
+}
+
+.course-credits {
+  color: #666;
+}

@@ -1,0 +1,25 @@
+<div class="profile-container">
+  <h2>Student Profile</h2>
+
+  <div class="profile-card">
+    <div class="profile-info">
+      <p><strong>Name:</strong> {{ studentName }}</p>
+      <p><strong>Email:</strong> {{ studentEmail }}</p>
+      <p><strong>Student ID:</strong> {{ studentId }}</p>
+    </div>
+  </div>
+
+  <h3>Enrolled Courses</h3>
+  <div *ngIf="(enrolledCourses$ | async)?.length === 0" class="no-enrollments">
+    <p>No courses enrolled yet. Visit the Courses page to enroll.</p>
+  </div>
+
+  <div *ngIf="(enrolledCourses$ | async)?.length as count" class="enrolled-list">
+    <p class="count">Total enrolled: {{ count }}</p>
+    <div *ngFor="let course of enrolledCourses$ | async" class="enrolled-item">
+      <span class="course-name">{{ course.name }}</span>
+      <span class="course-code">{{ course.code }}</span>
+      <span class="course-credits">{{ course.credits }} credits</span>
+    </div>
+  </div>
+</div>

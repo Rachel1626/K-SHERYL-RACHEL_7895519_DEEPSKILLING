@@ -1,0 +1,15 @@
+{
+  "courses": [
+    { "id": 1, "name": "Data Structures", "code": "CS101", "credits": 4, "gradeStatus": "passed", "description": "Fundamental data structures and algorithms" },
+    { "id": 2, "name": "Operating Systems", "code": "CS201", "credits": 3, "gradeStatus": "pending", "description": "Process management, memory, and file systems" },
+    { "id": 3, "name": "Database Systems", "code": "CS301", "credits": 4, "gradeStatus": "failed", "description": "Relational databases, SQL, and normalization" },
+    { "id": 4, "name": "Computer Networks", "code": "CS401", "credits": 3, "gradeStatus": "passed", "description": "Networking protocols and architecture" },
+    { "id": 5, "name": "Software Engineering", "code": "CS501", "credits": 3, "gradeStatus": "pending", "description": "Software development lifecycle and methodologies" }
+  ],
+  "students": [
+    { "id": 1, "name": "John Doe", "email": "john.doe@college.edu" }
+  ],
+  "enrollments": [
+    { "id": 1, "studentId": 1, "courseId": 1, "studentName": "John Doe" }
+  ]
+}

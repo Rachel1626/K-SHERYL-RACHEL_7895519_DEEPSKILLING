@@ -1,0 +1,28 @@
+<div class="detail-container">
+  <div *ngIf="isLoading" class="loading">Loading course details...</div>
+
+  <div *ngIf="!isLoading && !course" class="not-found">
+    <p>Course not found.</p>
+    <a routerLink="/courses">Back to Courses</a>
+  </div>
+
+  <div *ngIf="course" class="course-detail">
+    <h2>{{ course.name }}</h2>
+    <div class="detail-grid">
+      <div class="detail-item">
+        <strong>Code:</strong> {{ course.code }}
+      </div>
+      <div class="detail-item">
+        <strong>Credits:</strong> {{ course.credits }}
+      </div>
+      <div class="detail-item">
+        <strong>Status:</strong>
+        <span [ngClass]="'status-' + course.gradeStatus">{{ course.gradeStatus | titlecase }}</span>
+      </div>
+      <div class="detail-item" *ngIf="course.description">
+        <strong>Description:</strong> {{ course.description }}
+      </div>
+    </div>
+    <a routerLink="/courses" class="back-link">Back to Courses</a>
+  </div>
+</div>

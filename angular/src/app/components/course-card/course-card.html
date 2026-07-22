@@ -1,0 +1,24 @@
+<div class="course-card" [ngClass]="cardClasses" [ngStyle]="{ 'border-left': borderStyle }" appHighlight>
+  <h3>{{ course.name }}</h3>
+  <p><strong>Code:</strong> {{ course.code }}</p>
+  <p><strong>Credits:</strong> {{ course.credits | creditLabel }}</p>
+  <p class="badge" [ngClass]="{
+    'badge--passed': course.gradeStatus === 'passed',
+    'badge--failed': course.gradeStatus === 'failed',
+    'badge--pending': course.gradeStatus === 'pending'
+  }">
+    {{ course.gradeStatus | titlecase }}
+  </p>
+
+  <div *ngIf="isExpanded" class="details">
+    <p *ngIf="course.description">{{ course.description }}</p>
+  </div>
+
+  <div class="card-actions">
+    <a [routerLink]="['/courses', course.id]" class="link">View Details</a>
+    <button (click)="toggleExpand()">{{ isExpanded ? 'Hide Details' : 'Show Details' }}</button>
+    <button (click)="onEnroll()">
+      {{ (enrolledIds$ | async)?.includes(course.id) ? 'Unenroll' : 'Enroll' }}
+    </button>
+  </div>
+</div>
