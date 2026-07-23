@@ -25,3 +25,15 @@ Desktop.ini
 *.jar
 *.war
 *.ear
+
+# Node.js / React
+node_modules/
+build/
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

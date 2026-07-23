@@ -1,56 +1,36 @@
 # Deep Skilling Exercises
 
-This repository contains exercises across multiple domains covering **Data Structures & Algorithms**, **Design Patterns**, **PL/SQL**, **Testing with JUnit, Mockito, and SLF4J**, and **Spring Core and Maven**.
+This repository contains hands-on exercises across **Data Structures & Algorithms**, **Design Patterns**, **PL/SQL**, **JUnit/Mockito/SLF4J**, **Spring Core**, **Angular**, and **React**.
 
 ## Folder Structure
 
 ```
-├── DATA STRUCTURES & ALGORITHMS/       # Java DSA exercises (7 exercises)
-│   ├── Exercise1_Inventory/            # Inventory Management (HashMap)
-│   ├── Exercise2_Search/               # Linear & Binary Search
-│   ├── Exercise3_Sorting/              # Bubble Sort & Quick Sort
-│   ├── Exercise4_Employee/             # Array-based Employee Management
-│   ├── Exercise5_Tasks/                # Singly Linked List Task Manager
-│   ├── Exercise6_Library/              # Library Book Search
-│   └── Exercise7_Forecasting/          # Recursive Financial Forecasting
-│
+├── DATA STRUCTURES & ALGORITHMS/       # Java DSA (7 exercises)
 ├── DESIGN PATTERNS AND PRINCIPLES/     # Java Design Patterns (11 patterns)
-│   ├── AdapterPatternExample/          # Adapter Pattern (Payment Gateways)
-│   ├── BuilderPatternExample/          # Builder Pattern (Computer config)
-│   ├── CommandPatternExample/          # Command Pattern (Remote Control)
-│   ├── DecoratorPatternExample/        # Decorator Pattern (Notifiers)
-│   ├── DependencyInjectionExample/     # Dependency Injection (Customer Repo)
-│   ├── FactoryMethodPatternExample/    # Factory Method (Document Export)
-│   ├── MVCPatternExample/              # MVC Pattern (Student Management)
-│   ├── ObserverPatternExample/         # Observer Pattern (Stock Market)
-│   ├── ProxyPatternExample/            # Proxy Pattern (Image Loading)
-│   ├── SingletonPatternExample/        # Singleton Pattern (Logger)
-│   └── StrategyPatternExample/         # Strategy Pattern (Payment Methods)
-│
-├── PLSQL/                              # Oracle PL/SQL exercises (7 exercises)
-│   ├── schema.sql                      # Database schema (5 tables)
-│   ├── sample_data.sql                 # Sample data inserts
-│   ├── Exercise1_ControlStructures.sql # Loops, conditions, VIP flags
-│   ├── Exercise2_ErrorHandling.sql     # Exception handling procedures
-│   ├── Exercise3_StoredProcedures.sql  # Monthly interest, bonuses, transfers
-│   ├── Exercise4_Functions.sql         # Age calc, loan installment, balance check
-│   ├── Exercise5_Triggers.sql          # Audit logs, validation triggers
-│   ├── Exercise6_Cursors.sql           # Monthly statements, annual fees
-│   └── Exercise7_Packages.sql          # Customer, Employee, Account packages
-│
-├── JUnit, Mockito and SL4J/            # Java Testing exercises (7 projects)
-│   ├── JUnit_Basic Testing Exercises/  # Basic JUnit assertions & annotations
-│   ├── JUnit Advanced Testing/         # Parameterized, timeout & ordered tests
-│   ├── Mockito/                        # Mockito mocking basics
-│   ├── Mockito_Advanced/               # Stubbing, spying & argument matchers
-│   ├── Mockito_Mock_Dependencies/      # Mocking repositories & controllers
-│   ├── SLF4J_Logging/                  # SLF4J logging integration
-│   └── Spring_Testing/                 # Spring Boot testing (MockMvc, services)
-│
-├── Spring Core and Maven/                  # Spring Core & Maven exercises (2 projects)
-│   ├── LibraryManagement/                 # Spring Library Management (AOP, XML config)
-│   └── Spring_Initializr/                 # Spring Boot Initializr demo (HelloController)
-│
+├── PLSQL/                              # Oracle PL/SQL (7 exercises)
+├── JUnit, Mockito and SL4J/            # Java Testing (7 projects)
+├── Spring Core and Maven/              # Spring Core & Maven (2 projects)
+├── angular/                            # Angular Student Course Portal
+├── react/                              # React JS Hands-On Labs (19 labs)
+│   ├── lab1-myfirstreact/              # React Setup
+│   ├── lab2-StudentApp/                # Class Components
+│   ├── lab3-scorecalculatorapp/        # Functional Components & Props
+│   ├── lab4-blogapp/                   # Lifecycle Methods & Fetch API
+│   ├── lab5-stylingapp/                # CSS Modules & Conditional Styling
+│   ├── lab6-TrainersApp/               # React Router
+│   ├── lab7-shoppingapp/               # Props & Default Props
+│   ├── lab8-counterapp/                # State & setState
+│   ├── lab9-cricketapp/                # ES6 Features
+│   ├── lab10-officespacerentalapp/     # JSX & Inline CSS
+│   ├── lab11-eventexamplesapp/         # Event Handling
+│   ├── lab12-ticketbookingapp/         # Conditional Rendering
+│   ├── lab13-bloggerapp/               # Lists & Keys
+│   ├── lab14-employeeapp/              # Context API
+│   ├── lab15-ticketraisingapp/         # Controlled Forms
+│   ├── lab16-mailregisterapp/          # Form Validation
+│   ├── lab17-fetchuserapp/             # Fetch API & Async/Await
+│   ├── lab18-cohortdetailstesting/     # Unit Testing (Jest)
+│   └── lab19-gitclientapp/             # Mocking & Jest
 ├── .gitignore
 └── README.md
 ```
@@ -64,21 +44,30 @@ javac *.java && java MainClass
 ```
 
 ### PL/SQL
-Run the scripts in order in any Oracle SQL environment:
-1. `schema.sql` - Create tables
-2. `sample_data.sql` - Insert sample data
-3. Any exercise file as needed
+Run in order: `schema.sql` → `sample_data.sql` → exercise file.
 
 ### JUnit, Mockito & SLF4J
-Each project is a standalone Maven project:
 ```bash
 cd "JUnit, Mockito and SL4J/ProjectName"
 mvn test
 ```
 
 ### Spring Core and Maven
-Each project is a standalone Maven project:
 ```bash
 cd "Spring Core and Maven/ProjectName"
 mvn compile exec:java
+```
+
+### React
+```bash
+cd react/lab<NUMBER>-<name>
+npm install
+npm start
+```
+
+### Angular
+```bash
+cd angular
+npm install
+ng serve
 ```
