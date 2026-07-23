@@ -1,6 +1,6 @@
 # Deep Skilling Exercises
 
-This repository contains hands-on exercises across **Data Structures & Algorithms**, **Design Patterns**, **PL/SQL**, **JUnit/Mockito/SLF4J**, **Spring Core**, **Angular**, **React**, and **Microservices**.
+This repository contains hands-on exercises across **Data Structures & Algorithms**, **Design Patterns**, **PL/SQL**, **JUnit/Mockito/SLF4J**, **Spring Core**, **Angular**, **React**, **GIT HOL**, and **Microservices**.
 
 ## Folder Structure
 
@@ -12,6 +12,7 @@ This repository contains hands-on exercises across **Data Structures & Algorithm
 ├── Spring Core and Maven/              # Spring Core & Maven (2 projects)
 ├── angular/                            # Angular Student Course Portal
 ├── react/                              # React JS Hands-On Labs (19 labs)
+├── GIT HOL/                            # Git Hands-On Lab
 ├── Microservices/                      # Microservices with Spring Boot 3 (22 exercises)
 ├── .gitignore
 └── README.md
