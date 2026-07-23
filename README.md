@@ -12,25 +12,6 @@ This repository contains hands-on exercises across **Data Structures & Algorithm
 ├── Spring Core and Maven/              # Spring Core & Maven (2 projects)
 ├── angular/                            # Angular Student Course Portal
 ├── react/                              # React JS Hands-On Labs (19 labs)
-│   ├── lab1-myfirstreact/              # React Setup
-│   ├── lab2-StudentApp/                # Class Components
-│   ├── lab3-scorecalculatorapp/        # Functional Components & Props
-│   ├── lab4-blogapp/                   # Lifecycle Methods & Fetch API
-│   ├── lab5-stylingapp/                # CSS Modules & Conditional Styling
-│   ├── lab6-TrainersApp/               # React Router
-│   ├── lab7-shoppingapp/               # Props & Default Props
-│   ├── lab8-counterapp/                # State & setState
-│   ├── lab9-cricketapp/                # ES6 Features
-│   ├── lab10-officespacerentalapp/     # JSX & Inline CSS
-│   ├── lab11-eventexamplesapp/         # Event Handling
-│   ├── lab12-ticketbookingapp/         # Conditional Rendering
-│   ├── lab13-bloggerapp/               # Lists & Keys
-│   ├── lab14-employeeapp/              # Context API
-│   ├── lab15-ticketraisingapp/         # Controlled Forms
-│   ├── lab16-mailregisterapp/          # Form Validation
-│   ├── lab17-fetchuserapp/             # Fetch API & Async/Await
-│   ├── lab18-cohortdetailstesting/     # Unit Testing (Jest)
-│   └── lab19-gitclientapp/             # Mocking & Jest
 ├── .gitignore
 └── README.md
 ```
