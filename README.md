@@ -62,4 +62,3 @@ cd Microservices/account-service && mvn spring-boot:run
 cd Microservices/api-gateway && mvn spring-boot:run
 ```
 
-See `Microservices/README.md` for complete guide.
